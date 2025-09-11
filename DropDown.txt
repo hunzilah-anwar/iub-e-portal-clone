@@ -1,0 +1,35 @@
+    <style>
+        #home {
+            position: relative;
+        }
+
+        .dropdown {
+            display: none;
+            position: absolute;
+            right: -90px;
+            padding-top: 17px;
+            transition: 0.2s;
+        }
+
+        .content {
+            width: 200px;
+            color: white;
+            background-color: rgb(37, 36, 36);
+        }
+        .content p{
+            text-align: center;
+        }
+
+        #home:hover .dropdown {
+            display: none;
+        }
+    </style>
+
+    <li id="home"><a href="#">Home</a>
+        <div class="dropdown">
+            <div class="content">
+                <p><a href="#">Lorem ipsum</a></p>
+                <p><a href="#">Lorem ipsum</a></p>
+            </div>
+        </div>
+    </li>

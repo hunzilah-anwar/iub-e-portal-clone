@@ -1,0 +1,247 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    font-weight: normal;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+body{
+    background-image: url('https://eportal.iub.edu.pk/assets-site/images/popup_img1.jpg');
+    background-color: rgba(21, 57, 128, 0.85);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    scroll-behavior: smooth;
+}
+header{
+    padding-top: 20px;
+}
+#nav-bar{
+    background-color: rgba(0, 0, 0, 0.9);
+    position: fixed;
+    top: 0;
+    left: -300px;
+    width: 260px;
+    height: 100%;
+    transition: 0.5s;
+    z-index: 2;
+}
+#nav-bar h3{
+    margin-top: 50px;
+    margin-bottom: 10px;
+    padding-bottom: 6px;
+    font-size: 20px;
+    text-align: center;
+    color: white;
+    border-bottom: 1px solid #666;
+}
+.close-btn{
+    font-size: 30px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+#nav-bar li a{
+    text-decoration: none;
+    padding: 8px 8px 8px 32px;
+    color: white;
+    transition: 0.2s;
+    display: block;
+    font-size: 20px;
+}
+#nav-bar li a:hover , a:focus{
+    color: #1ca84a;
+}
+#more{
+    position: relative;
+}
+.dropdown{
+    position: absolute;
+    display: none;
+    top: 0px;
+    right: 32px;
+    transition: 0.2s;
+}
+.content{
+    width: 260px;
+    color: white;
+    background-color: rgb(37, 36, 36);
+}
+.content a{
+    text-decoration: none;
+    color: white;
+    text-align: left;
+    padding: 10px 10px 10px 80px !important;
+    box-sizing: border-box;
+    transition: 0.5s;
+    font-size: 15px !important;
+    text-decoration: solid;
+}
+.content a:hover , a:focus{
+    color: #1ca84a;
+    background-color: black;
+}
+#more:hover .dropdown{
+    display: block;
+}
+.menu-btn{
+    cursor: pointer;
+    font-size: 15px;
+    margin-left: 20px;
+    padding: 10px;
+    color: white;
+    border: 2px solid white;
+    background-color: rgba(9,0,0,0.2);
+    transition: 0.5s;
+}
+.header-logo{
+    width: 76%;
+    margin: 0 auto;
+    z-index: 99;
+    display: block;
+    text-align: center;
+}
+.header-logo img{
+    width: 70%;
+    padding: 10px 0 20px 0;
+}
+
+
+.roll-no{
+    cursor: pointer;
+    margin: 0px 5px 10px 5px;
+    width: 260px;
+    background-color: rgb(253 200 0 / 80%);
+    border: 2px solid rgba(253, 200, 0, 0.98);
+    transition: 0.5s;
+}
+.roll-no:hover{
+    background-color: rgba(253, 200, 0, 0.98);
+}
+.roll-no img{
+    width: 100px;
+    margin: 10px 0;
+}
+.roll-no a{
+    text-decoration: none;
+    color: white;
+}
+.roll-no a h2{
+    font-size: 15px;
+    line-height: 30px;
+}
+
+
+.icon-dashboard{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.icon-dashboard ul{
+    padding: 0;
+    width: 76%;
+    margin: 0 0 200px 0;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.student-data{
+    cursor: pointer;
+    margin: 0 0.5% 10px;
+    width: 24%;
+    height: 110px;
+    background-color: rgba(45, 39, 208, 0.62);
+    border: 2px solid rgba(253, 200, 0, 0.98);
+    transition: 0.5s;
+}
+.student-data:hover{
+    background-color: rgba(253, 200, 0, 0.98);
+}
+.student-data a{
+    text-decoration: none;
+    color: white;
+}
+.student-data a img{
+    width: 50px;
+}
+.student-data a h2{
+    font-size: 15px;
+}
+
+@media screen and (max-width: 992px){
+    .icon-dashboard ul{
+        width: 86%;
+    }
+    .student-data{
+        width: 32%;
+    }
+}
+@media screen and (max-width: 768px){
+    .icon-dashboard ul{
+        width: 86%;
+        justify-content: space-around;
+    }
+    .student-data{
+        width: 42%;
+    }
+}
+@media screen and (max-width: 600px){
+    .icon-dashboard ul{
+        width: 90%;
+    }
+    .student-data{
+        width: 100%;
+        height: 120px;
+    }
+}
+@media screen and (max-width: 400px){
+    .icon-dashboard ul{
+        width: 100%;
+    }
+    .menu-btn{
+        font-size: x-small;
+        top: 10px;
+        margin-left: 10px;
+        height: 30px;
+        padding: 5px;
+        box-sizing: border-box;
+    }
+}
+
+@media screen and (max-width: 375px){
+    .roll-no{
+        width: 100%;
+        margin-left: 0;
+        text-align: left;
+        padding: 10px 20px;
+    }
+    .icon-dashboard ul{
+        text-align: left;
+    }
+    .student-data{
+        width: 100%;
+        height: 50px; 
+        margin-bottom: 3px;       
+        border: 1px solid rgba(253, 200, 0, 0.98);
+        padding: 0px 20px;
+    }
+    .student-data a{
+        display: flex;
+        justify-content: start;
+        align-items: center;
+    }
+    .student-data a img{
+        width: 30px;
+        margin: 0;
+    }
+    .student-data a h2{
+        margin: 0;
+        margin-left: 10px;
+    }
+    .roll-no img{
+        width: 60px;
+    }
+}
